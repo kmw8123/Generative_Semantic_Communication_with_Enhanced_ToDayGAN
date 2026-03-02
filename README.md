@@ -29,10 +29,11 @@ To train the model with your custom configuration:
 
 Bash
 cd ToDayGAN
-python second_revision_train.py --dataroot ./dataset/path --name my_experiment --batchSize 4 --seg_nc 35
+python train.py --dataroot ./dataset/path --name my_experiment --batchSize 4 --seg_nc 35
 Testing the Model
 To generate translated images from the trained checkpoints:
 
 Bash
 cd ToDayGAN
-python review_test.py --dataroot ./dataset/path --name my_experiment --how_many 100
+
+python test.py --dataroot ./dataset/path --name my_experiment --how_many 100
